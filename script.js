@@ -3,18 +3,18 @@ class Person{
 		this.name=name;
 		this.age=age;
 	}
-	greet() {
-    document.body.innerHTML += `Hello, my name is ${this.name}, I am ${this.age} years old.<br>`;
-}
+	greet(){
+		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
+	}
 }
 class Employee extends Person{
 	constructor(name,age,jobTitle){
 		super(name,age);
 		this.jobTitle=jobTitle;
 	}
-	jobGreet() {
-    document.body.innerHTML += `Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.<br>`;
-}
+	jobGreet(){
+        console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
+    }
 }
 const Person1= new Person('Alice',25);
 Person1.greet()

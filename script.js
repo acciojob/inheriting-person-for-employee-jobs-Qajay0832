@@ -17,6 +17,10 @@ class Employee extends Person{
         return `Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`
     }
 }
+const Person1= new Person('Alice',25);
+Person1.greet()
+const Employee1= new Employee('Bob',30,'Manager');
+Employee1.jobGreet()
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
